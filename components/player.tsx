@@ -201,7 +201,7 @@ const Player = ({songs, activeSong}) => {
                         min={0}
                         step={0.1}
                         aria-label={['min', 'max']}
-                        max = {duration ? duration.toFixed(2): 0}
+                        max = {duration ? duration.toFixed(2) as unknown as number: 0}
                         onChange={onSeek}
                         value={[seek]}
                         onChangeStart={() => setIsSeeking(true)}
