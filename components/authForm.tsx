@@ -1,4 +1,4 @@
-import { Box, Flex, Input, Button } from '@chakra-ui/react'
+import { Box, Flex, Input, Button, Text } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import { FC, useState } from 'react'
 import { useSWRConfig } from 'swr'
@@ -23,6 +23,8 @@ const AuthForm: FC<{ mode: 'signin' | 'signup' }> = ({mode}) => {
 
     return (
         <Box height="100vh" width="100vw" bg="black">
+
+            
             <Flex 
                 justify="center" 
                 align="center" 
@@ -33,6 +35,14 @@ const AuthForm: FC<{ mode: 'signin' | 'signup' }> = ({mode}) => {
                 <NextImage 
                     src="/musica-logo.png" height={100} width={100}/>
             </Flex>
+
+            <Flex justify="center" 
+                align="center" >
+            <Text>email == ||  user@test.mail.com |||</Text>
+            <Text>   ||| password == password</Text>
+            </Flex>
+
+            
 
             <Flex justify="center" align="center" height="calc(100vh - 100px)">
                 <Box padding="50px" bg="gray.900" borderRadius="6px">
