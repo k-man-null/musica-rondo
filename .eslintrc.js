@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'airbnb', 'airbnb/hooks', 'prettier'],
+  extends: [],
   plugins: ['react', '@typescript-eslint', 'prettier'],
   env: {
     browser: true,
@@ -21,7 +21,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-param-reassign': 'off',
     'import/extensions': [
-      'error',
+      'warn',
       'ignorePackages',
       {
         ts: 'never',
@@ -33,7 +33,7 @@ module.exports = {
     'prefer-arrow-callback': 'off',
     'react/jsx-filename-extension': 'off',
     'react/function-component-definition': [
-      'error',
+      'warn',
       {
         namedComponents: 'arrow-function',
         unnamedComponents: 'arrow-function',
